@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Event Sphere</title>
+  <meta name="description" content="A decade of celebrations — royal weddings, electric concerts, corporate galas and destination soirées produced by Event Sphere." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark"><i class="fa-solid fa-crown"></i></span>
+        <span class="brand-name">Event<span class="brand-accent">Sphere</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./portfolio.html" class="active">Portfolio</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#team">Team</a>
+        <a href="index.html#book" class="nav-cta">Book Event <i class="fa-solid fa-arrow-right"></i></a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PORTFOLIO HERO ============ -->
+  <section class="port-hero">
+    <div class="ph-bg">
+      <div class="ph-orb orb-1"></div>
+      <div class="ph-orb orb-2"></div>
+      <div class="ph-orb orb-3"></div>
+      <div class="ph-grain"></div>
+    </div>
+
+    <div class="container ph-inner">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <span>Portfolio</span>
+      </nav>
+
+      <span class="eyebrow"><span class="dot"></span> 1,240+ Productions · 34 Countries</span>
+
+      <h1 class="ph-title">
+        A decade of <em>standing</em><br/>
+        <span class="gold-text">ovations.</span>
+      </h1>
+
+      <p class="ph-sub">
+        From candle-lit palace weddings to neon-lit stadium festivals — here's a
+        curated glimpse of the celebrations we've staged. Every frame is a story
+        we lived through with our clients.
+      </p>
+
+      <div class="ph-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search by venue, city or event style…" />
+        <button>Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FILTERS ============ -->
+  <section class="filters">
+    <div class="container">
+      <div class="filter-row">
+        <button class="filter-chip active">All Events <span>146</span></button>
+        <button class="filter-chip">Weddings <span>48</span></button>
+        <button class="filter-chip">Concerts <span>22</span></button>
+        <button class="filter-chip">Corporate Galas <span>31</span></button>
+        <button class="filter-chip">Destination <span>19</span></button>
+        <button class="filter-chip">Product Launches <span>14</span></button>
+        <button class="filter-chip">Private Soirées <span>12</span></button>
+      </div>
+      <div class="sort">
+        <i class="fa-solid fa-arrow-down-wide-short"></i>
+        <span>Sort by</span>
+        <select>
+          <option>Most Recent</option>
+          <option>Most Popular</option>
+          <option>Largest Scale</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECT ============ -->
+  <section class="featured-project">
+    <div class="container">
+      <div class="fp-card">
+        <div class="fp-media">
+          <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=1600&q=80" alt="The Chandela Affair — Royal Wedding Udaipur" />
+          <span class="fp-tag"><i class="fa-solid fa-star"></i> Editor's Pick</span>
+        </div>
+        <div class="fp-content">
+          <span class="fp-cat">Royal Wedding · Udaipur</span>
+          <h2 class="fp-title">The <span class="gold-text">Chandela</span> Affair</h2>
+          <p>A 4-day palace wedding for 600 guests at Jagmandir Island Palace. 12 ceremonial sets, 18 musicians, an aerial fireworks finale across Lake Pichola — and one bride who said it felt "like walking through a film."</p>
+          <ul class="fp-meta">
+            <li><span>Guests</span><strong>600</strong></li>
+            <li><span>Duration</span><strong>4 Days</strong></li>
+            <li><span>Crew</span><strong>180</strong></li>
+            <li><span>Year</span><strong>2024</strong></li>
+          </ul>
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-arrow-right-long"></i> Explore Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS GRID ============ -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag"><i class="fa-solid fa-camera-retro"></i> Selected Works</span>
+        <h2 class="section-title">Recent <span class="emerald-text">productions.</span></h2>
+        <p class="section-lead center">A snapshot from the last 24 months.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=1200&q=80" alt="Neon Skylines Tour"/>
+            <span class="proj-year">2024</span>
+          </div>
+          <div class="proj-body">
+            <span class="proj-cat">Live Concert · Mumbai</span>
+            <h3>Neon Skylines Tour</h3>
+            <p>A 4-city arena tour with custom kinetic stage and 360° LED reactive lighting.</p>
+            <div class="proj-foot">
+              <span><i class="fa-solid fa-users"></i> 38,000 guests</span>
+              <a href="#" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=1200&q=80" alt="Aurum Summit"/>
+            <span class="proj-year">2024</span>
+          </div>
+          <div class="proj-body">
+            <span class="proj-cat">Corporate Gala · Dubai</span>
+            <h3>Aurum Summit 2024</h3>
+            <p>An award-night gala at Atlantis The Palm — gold-on-gold staging and a holographic reveal.</p>
+            <div class="proj-foot">
+              <span><i class="fa-solid fa-users"></i> 1,200 guests</span>
+              <a href="#" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="https://images.unsplash.com/photo-1530023367847-a683933f4172?w=1200&q=80" alt="Cliffside Vows Santorini"/>
+            <span class="proj-year">2023</span>
+          </div>
+          <div class="proj-body">
+            <span class="proj-cat">Destination · Santorini</span>
+            <h3>Cliffside Vows</h3>
+            <p>A sunset wedding on the caldera with white-marble altar and 200 floating lanterns.</p>
+            <div class="proj-foot">
+              <span><i class="fa-solid fa-users"></i> 120 guests</span>
+              <a href="#" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1200&q=80" alt="Nova X Reveal"/>
+            <span class="proj-year">2024</span>
+          </div>
+          <div class="proj-body">
+            <span class="proj-cat">Product Launch · Bengaluru</span>
+            <h3>Nova X Reveal</h3>
+            <p>Immersive launch with floor-mapped projection and a six-axis robotic reveal of the product.</p>
+            <div class="proj-foot">
+              <span><i class="fa-solid fa-users"></i> 850 guests</span>
+              <a href="#" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="https://images.unsplash.com/photo-1496024840928-4c417adf211d?w=1200&q=80" alt="Sunburn Echo Stage"/>
+            <span class="proj-year">2023</span>
+          </div>
+          <div class="proj-body">
+            <span class="proj-cat">Music Festival · Goa</span>
+            <h3>Sunburn Echo Stage</h3>
+            <p>A 3-day stage build with kinetic LED ribbons synced to live audio waveforms.</p>
+            <div class="proj-foot">
+              <span><i class="fa-solid fa-users"></i> 65,000 guests</span>
+              <a href="#" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&q=80" alt="Maison Doré Gala"/>
+            <span class="proj-year">2024</span>
+          </div>
+          <div class="proj-body">
+            <span class="proj-cat">Charity Gala · Paris</span>
+            <h3>Maison Doré</h3>
+            <p>A black-tie philanthropy dinner at Hôtel de Crillon — 22 courses, 9 string ensembles.</p>
+            <div class="proj-foot">
+              <span><i class="fa-solid fa-users"></i> 320 guests</span>
+              <a href="#" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1200&q=80" alt="The Saanvi Sangeet"/>
+            <span class="proj-year">2024</span>
+          </div>
+          <div class="proj-body">
+            <span class="proj-cat">Sangeet Night · Jaipur</span>
+            <h3>The Saanvi Sangeet</h3>
+            <p>A Bollywood-themed sangeet with a 14-piece live orchestra and surprise celebrity performance.</p>
+            <div class="proj-foot">
+              <span><i class="fa-solid fa-users"></i> 450 guests</span>
+              <a href="#" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=80" alt="Lumina Awards"/>
+            <span class="proj-year">2023</span>
+          </div>
+          <div class="proj-body">
+            <span class="proj-cat">Award Night · Singapore</span>
+            <h3>Lumina Awards</h3>
+            <p>A futuristic award show with a 24-meter wraparound LED proscenium and live AR overlays.</p>
+            <div class="proj-foot">
+              <span><i class="fa-solid fa-users"></i> 1,800 guests</span>
+              <a href="#" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-media">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1200&q=80" alt="The Iyer Wedding"/>
+            <span class="proj-year\">2023</span>
+          </div>
+          <div class="proj-body">
+            <span class="proj-cat">Royal Wedding · Kerala</span>
+            <h3>The Iyer Wedding</h3>
+            <p>A backwater wedding aboard restored kettuvallam boats with traditional Carnatic ensembles.</p>
+            <div class="proj-foot">
+              <span><i class="fa-solid fa-users"></i> 280 guests</span>
+              <a href="#" class="proj-link">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="load-more">
+        <button class="btn btn-ghost"><i class="fa-solid fa-rotate-right"></i> Load More Projects</button>
+        <p>Showing 9 of 146 productions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS BANNER ============ -->
+  <section class="stats-banner">
+    <div class="container stats-banner-inner">
+      <div><strong>1,240+</strong><span>Productions</span></div>
+      <div><strong>820k</strong><span>Guests Hosted</span></div>
+      <div><strong>34</strong><span>Countries</span></div>
+      <div><strong>18</strong><span>Industry Awards</span></div>
+      <div><strong>4.97★</strong><span>Client Rating</span></div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section process">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Behind The Curtain</span>
+        <h2 class="section-title">How a moment <span class="gold-text">becomes a memory.</span></h2>
+        <p class="section-lead center">Every project follows the same four chapters — and we never skip a beat.</p>
+      </div>
+
+      <div class="process-grid">
+        <article class="step-card">
+          <span class="step-num">01</span>
+          <i class="fa-solid fa-lightbulb step-ico"></i>
+          <h3>Discover</h3>
+          <p>Deep-dive conversations to understand your story, palette, must-haves and the feeling you want the night to leave behind.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-num">02</span>
+          <i class="fa-solid fa-pen-ruler step-ico"></i>
+          <h3>Design</h3>
+          <p>Bespoke mood boards, 3D renders, set sketches, music direction and a minute-by-minute experience script.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-num">03</span>
+          <i class="fa-solid fa-toolbox step-ico"></i>
+          <h3>Produce</h3>
+          <p>In-house fabrication, vendor curation, rehearsals, drone tests and a war-room ready for surprises.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-num">04</span>
+          <i class="fa-solid fa-champagne-glasses step-ico"></i>
+          <h3>Celebrate</h3>
+          <p>The night arrives. We hold the wheel. You get to be a guest at your own event — exactly as it should be.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIAL STRIP ============ -->
+  <section class="testimonial">
+    <div class="container test-grid">
+      <div class="test-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Watching Event Sphere choreograph our wedding was like watching a symphony conductor — every cue, every light, every petal landed exactly when it should. Four days, zero stress, a thousand memories."</p>
+        <div class="test-author">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=160&q=80" alt="Ananya & Rohit" />
+          <div>
+            <strong>Ananya & Rohit Chandela</strong>
+            <span>The Chandela Affair · Udaipur</span>
+          </div>
+        </div>
+      </div>
+      <div class="test-photo">
+        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1000&q=80" alt="Royal wedding moment" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section cta">
+    <div class="container cta-card">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> Yours could be next</span>
+        <h2 class="section-title">Your event deserves a <span class="gold-text">portfolio entry too.</span></h2>
+        <p>Let's build something worth photographing. Coffee on us — proposal within 24 hours.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="index.html#book" class="btn btn-primary big"><i class="fa-solid fa-sparkles"></i> Start Your Project</a>
+        <a href="about.html" class="btn btn-ghost-light"><i class="fa-solid fa-book-open"></i> Read Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"><i class="fa-solid fa-crown"></i></span>
+          <span class="brand-name">Event<span class="brand-accent">Sphere</span></span>
+        </a>
+        <p>Crafting royal celebrations and electric experiences since 2023. Headquartered in Mumbai, present worldwide.</p>
+        <div class="foot-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#team">Our Team</a></li>
+          <li><a href="index.html#book">Book Event</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Royal Weddings</a></li>
+          <li><a href="index.html#services">Corporate Galas</a></li>
+          <li><a href="index.html#services">Live Concerts</a></li>
+          <li><a href="index.html#services">Destination Events</a></li>
+          <li><a href="index.html#services">Product Launches</a></li>
+          <li><a href="index.html#services">Private Soirées</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> 14 Marine Drive, Mumbai 400020, India</li>
+          <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fa-solid fa-envelope"></i> hello@eventsphere.co</li>
+          <li><i class="fa-regular fa-clock"></i> Mon – Sat · 10am to 8pm IST</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom container">
+      <span>© 2025 Event Sphere Atelier Pvt. Ltd. — Designed with ♥ for unforgettable nights.</span>
+      <div>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

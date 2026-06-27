@@ -1,0 +1,646 @@
+
+Action: file_editor create /app/website/index.html --file-text "<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Sphere — Royal Event Management & Experiences</title>
+  <meta name="description" content="Event Sphere designs unforgettable royal weddings, corporate galas, concerts and bespoke celebrations across the globe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet"  href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand">
+        <span class="brand-mark">
+          <i class="fa-solid fa-crown"></i>
+        </span>
+        <span class="brand-name">Event<span class="brand-accent">Sphere</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="./about.html">About</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./services.html">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#team">Team</a>
+        <a href="#reach">Reach</a>
+        <a href="#book" class="nav-cta">Book Event <i class="fa-solid fa-arrow-right"></i></a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO / HOME ============ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">
+          <span class="dot"></span> Premier Event Atelier · Est. 2023
+        </span>
+        <h1 class="hero-title">
+          Where every <em>moment</em><br/>
+          becomes a <span class="gold-text">royal memory.</span>
+        </h1>
+        <p class="hero-sub">
+          From candlelit weddings to neon-lit festivals — Event Sphere crafts immersive
+          celebrations with theatrical detail, world-class production and an obsession
+          for the extraordinary.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-primary">
+            <i class="fa-solid fa-sparkles"></i> Plan My Event
+          </a>
+          <a href="#portfolio" class="btn btn-ghost">
+            <i class="fa-solid fa-circle-play"></i> Watch Our Story
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>1,240+</strong><span>Events Delivered</span></div>
+          <div><strong>34</strong><span>Countries Reached</span></div>
+          <div><strong>4.97★</strong><span>Client Rating</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card card-a">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=900&q=80" alt="Royal wedding decor" />
+          <div class="hero-card-tag"><i class="fa-solid fa-heart"></i> Royal Weddings</div>
+        </div>
+        <div class="hero-card card-b">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900&q=80" alt="Concert lighting" />
+          <div class="hero-card-tag"><i class="fa-solid fa-music"></i> Live Concerts</div>
+        </div>
+        <div class="hero-card card-c">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=900&q=80" alt="Gala dinner" />
+          <div class="hero-card-tag"><i class="fa-solid fa-champagne-glasses"></i> Galas</div>
+        </div>
+
+        <div class="floating-badge">
+          <div class="fb-circle">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>
+            <strong>Award Winning</strong>
+            <span>Best Event Studio 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue">
+      <span></span> Scroll
+    </a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>✦ Weddings</span><span>✦ Concerts</span><span>✦ Corporate Galas</span>
+      <span>✦ Birthdays</span><span>✦ Product Launches</span><span>✦ Festivals</span>
+      <span>✦ Award Nights</span><span>✦ Destination Events</span>
+      <span>✦ Weddings</span><span>✦ Concerts</span><span>✦ Corporate Galas</span>
+      <span>✦ Birthdays</span><span>✦ Product Launches</span><span>✦ Festivals</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT US ============ -->
+  <section id="about" class="section about">
+    <div class="container about-grid">
+      <div class="about-media">
+        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1000&q=80" alt="Event team at work" />
+        <div class="about-floating">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>“Detail is not a detail. It is the design.”</p>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <span class="section-tag"><i class="fa-solid fa-gem"></i> About Us</span>
+        <h2 class="section-title">A decade of <span class="gold-text">scripting magic</span> into reality.</h2>
+        <p class="section-lead">
+          Event Sphere is a full-service event atelier born out of a love for theatrics,
+          hospitality and human stories. We don't just plan events — we choreograph
+          experiences that stay with people long after the lights go down.
+        </p>
+
+        <div class="about-features">
+          <div class="feat">
+            <div class="feat-ico"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div>
+              <h4>Bespoke Concepts</h4>
+              <p>Original creative direction, no template celebrations.</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-ico"><i class="fa-solid fa-people-group"></i></div>
+            <div>
+              <h4>240+ Specialists</h4>
+              <p>Designers, stylists, lighting & sound engineers in-house.</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-ico"><i class="fa-solid fa-earth-asia"></i></div>
+            <div>
+              <h4>Global Reach</h4>
+              <p>Destinations from Udaipur to Santorini, Dubai to Bali.</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-ico"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <h4>End-to-End</h4>
+              <p>Concept, production, vendors, logistics — all under one roof.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO / EVENTS DONE ============ -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag"><i class="fa-solid fa-camera-retro"></i> Events Done By Us</span>
+        <h2 class="section-title">A portfolio painted in <span class="emerald-text">unforgettable nights.</span></h2>
+        <p class="section-lead center">From palace weddings to stadium concerts — moments we've staged for thousands.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="port-card big">
+          <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=1200&q=80" alt="Royal Udaipur Wedding"/>
+          <div class="port-meta">
+            <span>Royal Wedding · Udaipur</span>
+            <h3>The Chandela Affair</h3>
+          </div>
+        </article>
+
+        <article class="port-card">
+          <img src="https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=900&q=80" alt="Stadium Concert"/>
+          <div class="port-meta">
+            <span>Live Concert · Mumbai</span>
+            <h3>Neon Skylines Tour</h3>
+          </div>
+        </article>
+
+        <article class="port-card">
+          <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=900&q=80" alt="Corporate Gala"/>
+          <div class="port-meta">
+            <span>Corporate Gala · Dubai</span>
+            <h3>Aurum Summit 2024</h3>
+          </div>
+        </article>
+
+        <article class="port-card">
+          <img src="https://images.unsplash.com/photo-1530023367847-a683933f4172?w=900&q=80" alt="Beach destination wedding"/>
+          <div class="port-meta">
+            <span>Destination · Santorini</span>
+            <h3>Cliffside Vows</h3>
+          </div>
+        </article>
+
+        <article class="port-card">
+          <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=900&q=80" alt="Product launch"/>
+          <div class="port-meta">
+            <span>Product Launch · Bengaluru</span>
+            <h3>Nova X Reveal</h3>
+          </div>
+        </article>
+
+        <article class="port-card wide">
+          <img src="https://images.unsplash.com/photo-1496024840928-4c417adf211d?w=1400&q=80" alt="Music Festival"/>
+          <div class="port-meta">
+            <span>Music Festival · Goa</span>
+            <h3>Sunburn Echo Stage</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES / EVENTS WE ORGANIZE ============ -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag light"><i class="fa-solid fa-bullhorn"></i> Events We Organize</span>
+        <h2 class="section-title light">Choose your <span class="gold-text">flavour of celebration.</span></h2>
+        <p class="section-lead center light">Eight signature verticals. Limitless creative possibilities.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="serv-card">
+          <i class="fa-solid fa-ring serv-ico"></i>
+          <h3>Royal Weddings</h3>
+          <p>Multi-day rituals, palace décor, choreographed sangeets and cinematic storytelling.</p>
+        </article>
+        <article class="serv-card">
+          <i class="fa-solid fa-building-columns serv-ico"></i>
+          <h3>Corporate Galas</h3>
+          <p>Conferences, award nights and gala dinners with flawless production.</p>
+        </article>
+        <article class="serv-card">
+          <i class="fa-solid fa-music serv-ico"></i>
+          <h3>Live Concerts</h3>
+          <p>Artist management, stage design, lighting and crowd experience curation.</p>
+        </article>
+        <article class="serv-card">
+          <i class="fa-solid fa-cake-candles serv-ico"></i>
+          <h3>Milestone Birthdays</h3>
+          <p>Themed parties for kids, sweet sixteens and grand 50th & 60th celebrations.</p>
+        </article>
+        <article class="serv-card">
+          <i class="fa-solid fa-rocket serv-ico"></i>
+          <h3>Product Launches</h3>
+          <p>Brand reveals with immersive sets, press conferences and influencer activations.</p>
+        </article>
+        <article class="serv-card">
+          <i class="fa-solid fa-plane serv-ico"></i>
+          <h3>Destination Events</h3>
+          <p>Beach, mountain or palace — we handle logistics, travel and on-ground crew.</p>
+        </article>
+        <article class="serv-card">
+          <i class="fa-solid fa-mask-face serv-ico"></i>
+          <h3>Themed Festivals</h3>
+          <p>Masquerades, Bollywood retros, Great Gatsby nights and cultural festivals.</p>
+        </article>
+        <article class="serv-card">
+          <i class="fa-solid fa-handshake serv-ico"></i>
+          <h3>Private Soirées</h3>
+          <p>Intimate dinners, anniversaries and proposals styled to perfection.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section id="reviews" class="section reviews">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag"><i class="fa-solid fa-comments"></i> Client Voices</span>
+        <h2 class="section-title">Words from those who <span class="emerald-text">danced with us.</span></h2>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <p>"Event Sphere turned our wedding into a four-day fairytale. Every guest is still talking about it months later."</p>
+          <div class="reviewer\">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80" alt="Ananya & Rohit" />
+            <div>
+              <strong>Ananya & Rohit</strong>
+              <span>Royal Wedding · Udaipur</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card featured">
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <p>"Hands down the most creative team in the country. They reimagined our annual summit and our CEO was speechless. Magic on a deadline."</p>
+          <div class="reviewer">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80" alt="Marcus Lin" />
+            <div>
+              <strong>Marcus Lin</strong>
+              <span>CMO · Aurum Group</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <p>"Concert production at world-tour level. Sound, light, crowd flow — clinical execution with theatrical soul."</p>
+          <div class="reviewer">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80" alt="Zara Decruz" />
+            <div>
+              <strong>Zara Decruz.</strong>
+              <span>Indie Artist · Mumbai</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <p>"We hosted a 600-guest gala in Dubai with zero stress. Their team owned every detail like it was their own wedding."</p>
+          <div class="reviewer">
+            <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=200&q=80" alt="Faisal Ahmed" />
+            <div>
+              <strong>Faisal Ahmed</strong>
+              <span>Founder · Lumière FZ</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <p>"From the welcome drinks to the after-party — every micro-moment was choreographed. They redefined luxury for us."</p>
+          <div class="reviewer">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80" alt="Priya M" />
+            <div>
+              <strong>Priya M.</strong>
+              <span>50th Anniversary · Goa</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <p>"They made our product launch feel like a Coldplay show. Press loved it, customers shared it, our stock jumped."</p>
+          <div class="reviewer">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Karan V" />
+            <div>
+              <strong>Karan V.</strong>
+              <span>VP Brand · Nova Tech</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section id="team" class="section team">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag"><i class="fa-solid fa-user-group"></i> Our Employees</span>
+        <h2 class="section-title">The artists behind <span class="gold-text">the curtain.</span></h2>
+        <p class="section-lead center">A 240-strong family of creatives, technicians, planners and producers — each obsessed with their craft.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80" alt="Ishaani Rao" />
+          </div>
+          <h3>Ishaani Rao</h3>
+          <span>Founder & Creative Director</span>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80" alt="Devansh Kapoor" />
+          </div>
+          <h3>Devansh Kapoor</h3>
+          <span>Head of Production</span>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80" alt="Meera Arjun" />
+          </div>
+          <h3>Meera Arjun</h3>
+          <span>Lead Floral & Décor Stylist</span>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&q=80" alt="Aarav" />
+          </div>
+          <h3>Aarav</h3>
+          <span>Lighting & Stage Engineer</span>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80" alt="Pallavi" />
+          </div>
+          <h3>Pallavi</h3>
+          <span>Client Experience Lead</span>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80" alt="Rishi Devdutt" />
+          </div>
+          <h3>Rishi Devdutt</h3>
+          <span>Music & Talent Curator</span>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REACH / IMPACT ============ -->
+  <section id="reach" class="section reach">
+    <div class="container reach-inner">
+      <div class="reach-copy">
+        <span class="section-tag light"><i class="fa-solid fa-globe"></i> Our Reach</span>
+        <h2 class="section-title light">A decade. <span class="gold-text">Three continents.</span><br/>Countless standing ovations.</h2>
+        <p class="section-lead light">From the marble palaces of Rajasthan to the cliffs of Santorini and skyscrapers of Dubai — Event Sphere has built a global footprint, one celebration at a time.</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <i class="fa-solid fa-calendar-check"></i>
+          <strong>1,240+</strong>
+          <span>Events Delivered</span>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-earth-americas"></i>
+          <strong>34</strong>
+          <span>Countries Touched</span>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-users"></i>
+          <strong>820k</strong>
+          <span>Guests Hosted</span>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-trophy"></i>
+          <strong>18</strong>
+          <span>Industry Awards</span>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <strong>10 yrs</strong>
+          <span>Of Storytelling</span>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-handshake-angle"></i>
+          <strong>340+</strong>
+          <span>Brand Partners</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING ============ -->
+  <section id="book" class="section booking">
+    <div class="container booking-grid">
+      <div class="booking-copy">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Book Your Event</span>
+        <h2 class="section-title">Let's design your <span class="emerald-text">next standing ovation.</span></h2>
+        <p class="section-lead">Tell us about your celebration. Our concierge team will reach out within 24 hours with a tailored proposal.</p>
+
+        <ul class="booking-list">
+          <li><i class="fa-solid fa-circle-check"></i> Free creative consultation</li>
+          <li><i class="fa-solid fa-circle-check"></i> Dedicated event director</li>
+          <li><i class="fa-solid fa-circle-check"></i> Transparent budgeting</li>
+          <li><i class="fa-solid fa-circle-check"></i> 24/7 production support</li>
+        </ul>
+      </div>
+
+      <form class="booking-form" onsubmit="event.preventDefault(); this.querySelector('.success').classList.add('show');">
+        <div class="form-row">
+          <label>
+            <span>Full Name</span>
+            <input type="text" placeholder="e.g. Ananya Kapoor" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" placeholder="you@email.com" required />
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            <span>Phone</span>
+            <input type="tel" placeholder="+91 98xxxxxx00" />
+          </label>
+          <label>
+            <span>Event Type</span>
+            <select>
+              <option>Royal Wedding</option>
+              <option>Corporate Gala</option>
+              <option>Live Concert</option>
+              <option>Milestone Birthday</option>
+              <option>Product Launch</option>
+              <option>Destination Event</option>
+              <option>Themed Festival</option>
+              <option>Private Soirée</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            <span>Preferred Date</span>
+            <input type="date" />
+          </label>
+          <label>
+            <span>Estimated Guests</span>
+            <input type="number" placeholder="250" min="1" />
+          </label>
+        </div>
+
+        <label class="full">
+          <span>Tell Us Your Vision</span>
+          <textarea rows="4" placeholder="Theme, venue, mood, must-haves..."></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary big">
+          <i class="fa-solid fa-sparkles"></i> Submit Inquiry
+        </button>
+
+        <p class="success">
+          <i class="fa-solid fa-circle-check"></i> Inquiry received! Our concierge will reach out within 24 hours.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a href="#home" class="brand">
+          <span class="brand-mark"><i class="fa-solid fa-crown"></i></span>
+          <span class="brand-name">Event<span class="brand-accent">Sphere</span></span>
+        </a>
+        <p>Crafting royal celebrations and electric experiences since 2014. Headquartered in Mumbai, present worldwide.</p>
+        <div class="foot-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#book">Book Event</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Royal Weddings</a></li>
+          <li><a href="#services">Corporate Galas</a></li>
+          <li><a href="#services">Live Concerts</a></li>
+          <li><a href="#services">Destination Events</a></li>
+          <li><a href="#services">Product Launches</a></li>
+          <li><a href="#services">Private Soirées</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> 14 Marine Drive, Mumbai 400020, India</li>
+          <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fa-solid fa-envelope"></i> hello@eventsphere.co</li>
+          <li><i class="fa-regular fa-clock"></i> Mon – Sat · 10am to 8pm IST</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom container">
+      <span>© 2025 Event Sphere Atelier Pvt. Ltd. — Designed with ♥ for unforgettable nights.</span>
+      <div>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

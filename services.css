@@ -1,0 +1,184 @@
+
+.services-hero {
+  position: relative;
+  padding: 180px 0 100px 0;
+  background-color: rgb(241, 225, 196); 
+  color: #ffffff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.orb-services-1 {
+  position: absolute;
+  top: -10%;
+  left: 15%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.orb-services-2 {
+  position: absolute;
+  bottom: -10%;
+  right: 15%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(16,124,65,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.services-hero .hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Layout for Detailed Rows alternating seamlessly */
+.services-detail-section {
+  padding: 120px 0;
+  background-color: #fafafa;
+  color: #1e252b;
+}
+
+.service-detail-row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 120px;
+}
+
+.service-detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.service-detail-copy,
+.service-detail-visual {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.service-detail-copy {
+  padding-right: 8%;
+  position: relative;
+}
+
+.service-detail-row.reverse .service-detail-copy {
+  padding-right: 0;
+  padding-left: 8%;
+}
+
+.service-detail-row.reverse .service-detail-copy {
+  direction: ltr;
+}
+
+.service-detail-row.reverse {
+  direction: rtl; /* Triggers table cells flip natively for structural safety */
+}
+
+/* Internal Luxury Typography Hierarchy */
+.service-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: rgba(212, 175, 55, 0.15);
+  line-height: 1;
+  margin-bottom: -10px;
+  letter-spacing: -2px;
+}
+
+.service-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 15px 0 25px 0;
+  letter-spacing: -0.5px;
+}
+
+.service-desc {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #556270;
+  margin-bottom: 30px;
+}
+
+.service-spec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.service-spec-list li {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.service-spec-list li i {
+  color: #d4af37; /* Metallic Gold Accent */
+  margin-right: 10px;
+  font-size: 0.95rem;
+}
+
+.service-detail-row.reverse .service-spec-list li i {
+  color: #107c41; /* Emerald Accent for alternate rows */
+}
+
+/* Image Visual Box */
+.service-detail-visual {
+  position: relative;
+}
+
+.service-detail-visual img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-detail-visual:hover img {
+  transform: scale(1.02);
+}
+
+/* Interactive Utility Overrides */
+.small-btn {
+  padding: 14px 28px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* Responsive breakdowns */
+@media (max-width: 991px) {
+  .service-detail-copy,
+  .service-detail-visual {
+    display: block;
+    width: 100%;
+    padding: 0 !important;
+  }
+  
+  .service-detail-row.reverse {
+    direction: ltr;
+  }
+  
+  .service-detail-visual {
+    margin-top: 40px;
+  }
+  
+  .service-detail-visual img {
+    height: 380px;
+  }
+  
+  .service-heading {
+    font-size: 2.2rem;
+  }
+}
