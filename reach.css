@@ -1,0 +1,402 @@
+/* ==========================================================================
+   REACH GLOBAL INTERFACE & WORLD STAGE DISPATCH SYSTEMS
+   ========================================================================== */
+
+/* Full Screen Dark Hero Setup */
+.dynamic-hero {
+  position: relative;
+  min-height: 65vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 180px 0 100px 0;
+  background-color: #0b0f12;
+  overflow: hidden;
+}
+
+/* Atmospheric Ambient Lighting Orbs */
+.reach-orb-1 {
+  position: absolute;
+  top: -10%;
+  right: 5%;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(16, 124, 65, 0.16) 0%, transparent 75%);
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: floatOrb 22s ease-in-out infinite alternate;
+}
+
+.reach-orb-2 {
+  position: absolute;
+  bottom: -15%;
+  left: 10%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(214, 175, 54, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(50px);
+  animation: floatOrb 16s ease-in-out infinite alternate-reverse;
+}
+
+.wide-hero-copy {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wide-hero-copy .hero-title {
+  font-size: 4rem;
+  line-height: 1.15;
+  margin-bottom: 25px;
+}
+
+.reach-stats-strip {
+  justify-content: center;
+  gap: 80px;
+  margin-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 30px;
+}
+
+/* Global Hubs Section */
+.global-hubs-section {
+  background-color: #ffffff;
+  padding: 100px 0;
+}
+
+.center-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hubs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.hq-card {
+  background-color: #f8fafc;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 40px;
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.hq-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+  background-color: #ffffff;
+}
+
+.hq-card.active-hq {
+  border-top: 4px solid #d4af37;
+  background-color: #ffffff;
+}
+
+.hq-status-tag {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a0aec0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #107c41;
+  border-radius: 50%;
+  display: inline-block;
+  animation: staticPulse 2s infinite ease-in-out;
+}
+
+.hq-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #0b0f12;
+  margin-bottom: 12px;
+}
+
+.hq-address {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #4a5568;
+  margin-bottom: 25px;
+}
+
+.hq-address i {
+  color: #d4af37;
+  margin-right: 4px;
+}
+
+.hq-channels {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #edf2f7;
+  padding-top: 20px;
+}
+
+.hq-channels li {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.85rem;
+  color: #718096;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hq-channels li:last-child { margin-bottom: 0; }
+.hq-channels li i { color: #107c41; width: 14px; }
+
+/* Primary Interaction Interface Section */
+.reach-interface {
+  background-color: #f7f9fa;
+  padding: 120px 0;
+  border-top: 1px solid #edf2f7;
+}
+
+.interface-grid {
+  display: flex;
+  gap: 80px;
+}
+
+/* Left Column: Intake Card Styling */
+.intake-form-container {
+  width: 55%;
+  background-color: #ffffff;
+  padding: 55px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.02);
+}
+
+.form-header {
+  margin-bottom: 40px;
+}
+
+.form-header h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #0b0f12;
+  margin-bottom: 10px;
+}
+
+.form-header p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  color: #606f7b;
+  line-height: 1.5;
+}
+
+/* Form Infrastructure Architecture */
+.concierge-form .form-group {
+  margin-bottom: 25px;
+}
+
+.concierge-form .flex-row {
+  display: flex;
+  gap: 25px;
+}
+
+.concierge-form .flex-row .form-group {
+  width: 50%;
+}
+
+.concierge-form label {
+  display: block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1e252b;
+  margin-bottom: 10px;
+}
+
+.concierge-form input,
+.concierge-form select,
+.concierge-form textarea {
+  width: 100%;
+  padding: 15px 20px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #0b0f12;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.concierge-form input:focus,
+.concierge-form select:focus,
+.concierge-form textarea:focus {
+  outline: none;
+  border-color: #107c41;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(16, 124, 65, 0.05);
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #0b0f12;
+  color: #ffffff;
+  border: none;
+  padding: 18px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background-color: #107c41;
+  box-shadow: 0 10px 25px rgba(16, 124, 65, 0.2);
+}
+
+/* Right Column: World Stage Capabilities */
+.global-reach-breakdown {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.breakdown-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #0b0f12;
+  margin: 15px 0 20px 0;
+}
+
+.breakdown-p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #51616c;
+  margin-bottom: 40px;
+}
+
+.capability-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.capability-item:last-child { margin-bottom: 0; }
+
+.capability-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #107c41;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+  flex-shrink: 0;
+}
+
+.capability-item h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: #0b0f12;
+  margin-bottom: 6px;
+}
+
+.capability-item p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #606f7b;
+}
+
+/* Logistics Map Strip */
+.logistics-map-section {
+  background-color: #0b0f12;
+  padding: 120px 0;
+}
+
+.map-inner {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.map-text { width: 45%; }
+.map-description {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #a0aec0;
+  margin-top: 25px;
+}
+
+.map-graphic-container {
+  width: 55%;
+  height: 420px;
+  background-color: #12181c;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.map-graphic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+/* Responsive Fluid Modifiers */
+@media (max-width: 1024px) {
+  .hubs-grid { grid-template-columns: 1fr; gap: 25px; }
+  .interface-grid { flex-direction: column; gap: 60px; }
+  .intake-form-container, .global-reach-breakdown { width: 100%; }
+  .map-inner { flex-direction: column; gap: 50px; }
+  .map-text, .map-graphic-container { width: 100%; }
+  .map-graphic-container { height: 320px; }
+}
+
+@media (max-width: 768px) {
+  .wide-hero-copy .hero-title { font-size: 2.8rem; }
+  .reach-stats-strip { flex-direction: column; gap: 20px; }
+  .concierge-form .flex-row { flex-direction: column; gap: 0; }
+  .concierge-form .flex-row .form-group { width: 100%; }
+  .intake-form-container { padding: 35px 25px; }
+}
+
+/* Ambient Animation Vectors */
+@keyframes floatOrb {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-35px) scale(1.04); }
+}
+
+@keyframes staticPulse {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
